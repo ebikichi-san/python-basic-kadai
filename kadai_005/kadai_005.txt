@@ -1,0 +1,30 @@
+PS C:\Users\ebine> cd "C:\Users\ebine\Desktop"
+PS C:\Users\ebine\Desktop> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\ebine\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/08/21     13:25                git_challenge
+
+
+PS C:\Users\ebine\Desktop> cd git_challenge
+PS C:\Users\ebine\Desktop\git_challenge> git init
+Initialized empty Git repository in C:/Users/ebine/Desktop/git_challenge/.git/
+PS C:\Users\ebine\Desktop\git_challenge> echo "Hello, World!" > hello_world.txt
+PS C:\Users\ebine\Desktop\git_challenge> git add hello_world.txt
+PS C:\Users\ebine\Desktop\git_challenge> git commit -m "hello_world.txtを追加"
+[main (root-commit) d17925d] hello_world.txtを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\ebine\Desktop\git_challenge> echo "こんにちは、世界！" >> hello_world.txt
+PS C:\Users\ebine\Desktop\git_challenge> git add hello_world.txt
+PS C:\Users\ebine\Desktop\git_challenge> git commit -m "日本語訳を追記"
+[main 5533eaf] 日本語訳を追記
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\ebine\Desktop\git_challenge> git log --oneline
+5533eaf (HEAD -> main) 日本語訳を追記
+d17925d hello_world.txtを追加
+PS C:\Users\ebine\Desktop\git_challenge> 
